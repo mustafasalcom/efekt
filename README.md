@@ -70,6 +70,8 @@ Mac:     brew install ffmpeg
 - Claude içerik **uydurmaz**: rakam, isim, yorum yazmaz, yalnızca senin verdiğini yerleştirir.
 - Yörüngede video vermezsen kartlar boş cam çerçeve olarak döner.
 
+Tek sayfalık kurulum rehberi: [KURULUM.pdf](KURULUM.pdf)
+
 Her efektin alanları `skills/<efekt>/SKILL.md` içinde.
 
 ### Komut satırından (Claude olmadan)

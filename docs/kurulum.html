@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Playfair+Display:ital,wght@1,500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 210mm; height: 297mm; background: #0B0B0D; color: #F5F3EF; font-family: Inter, sans-serif; padding: 16mm 15mm 12mm; position: relative; overflow: hidden; }
+body::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 30% at 20% 0%, rgba(230,196,135,.14), transparent 70%); }
+.wrap { position: relative; }
+.kick { font-family: "JetBrains Mono", monospace; font-size: 9pt; letter-spacing: .22em; color: #E6C487; }
+h1 { font-size: 30pt; font-weight: 800; letter-spacing: -.035em; margin-top: 4mm; line-height: 1.05; }
+h1 em { font-family: "Playfair Display", serif; font-weight: 500; color: #E6C487; }
+.lead { font-size: 10.5pt; color: rgba(245,243,239,.65); margin-top: 3mm; max-width: 150mm; line-height: 1.5; }
+.steps { margin-top: 8mm; display: grid; gap: 4mm; }
+.step { display: grid; grid-template-columns: 11mm 1fr; gap: 4mm; padding: 4.5mm 5mm; border: 1px solid rgba(255,255,255,.12); border-radius: 5mm; background: linear-gradient(160deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); }
+.n { width: 10mm; height: 10mm; border-radius: 50%; background: linear-gradient(180deg,#FFF1CF,#E6C487 50%,#B8873E); color: #14110C; font-weight: 800; font-size: 13pt; display: flex; align-items: center; justify-content: center; }
+.step h2 { font-size: 12.5pt; font-weight: 700; }
+.step p { font-size: 9.5pt; color: rgba(245,243,239,.7); margin-top: 1.2mm; line-height: 1.5; }
+code, .cmd { font-family: "JetBrains Mono", monospace; }
+.cmd { display: block; margin-top: 2.2mm; padding: 2.6mm 3.5mm; border-radius: 3mm; background: #1B1B1E; border: 1px solid rgba(230,196,135,.35); color: #E6C487; font-size: 9.5pt; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5mm; margin-top: 2.5mm; }
+.fx { padding: 2.6mm 3mm; border-radius: 3mm; background: #18181B; border: 1px solid rgba(255,255,255,.1); }
+.fx b { font-family: "JetBrains Mono", monospace; font-size: 9pt; color: #E6C487; font-weight: 500; }
+.fx span { display: block; font-size: 8pt; color: rgba(245,243,239,.6); margin-top: .8mm; line-height: 1.35; }
+.foot { position: absolute; left: 15mm; right: 15mm; bottom: 10mm; display: flex; justify-content: space-between; font-size: 8.5pt; color: rgba(245,243,239,.5); }
+.foot b { color: #F5F3EF; font-weight: 600; }
+</style></head><body><div class="wrap">
+<div class="kick">KURULUM REHBERİ · 1 SAYFA</div>
+<h1>Tek komutla <em>8 efekt</em><br>kendi videona.</h1>
+<p class="lead">Claude Code'a linki yapıştır, kurulsun. Sonra efektin adını ve videonu yaz; Claude efekti uygular, yeni videoyu yanına kaydeder.</p>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><div>
+    <h2>Gerekenleri hazırla</h2>
+    <p>Claude Code (masaüstü uygulaması ya da terminal), Node.js 18+ ve ffmpeg. Grafik, yörünge ve bölünmüş efektleri için ayrıca Python 3.9+.</p>
+    <span class="cmd">Windows: winget install ffmpeg   ·   Mac: brew install ffmpeg</span>
+  </div></div>
+  <div class="step"><div class="n">2</div><div>
+    <h2>Linki yapıştır, “kur” yaz</h2>
+    <p>Claude repoyu indirir, komutları yerleştirir ve motoru kurar. Paket kurulumu için bir kez onay ister; “evet” de.</p>
+    <span class="cmd">https://github.com/mustafasalcom/efekt kur</span>
+  </div></div>
+  <div class="step"><div class="n">3</div><div>
+    <h2>Yeni bir oturum aç ve komutu yaz</h2>
+    <p>Komut + video yolu + efektin başlayacağı saniye. Konuştuğun bir an seç; efekt 5–6 saniye sürer.</p>
+    <span class="cmd">/takvim C:\videolarim\reels.mp4 12</span>
+  </div></div>
+  <div class="step"><div class="n">4</div><div>
+    <h2>İstersen kendi içeriğini ver</h2>
+    <p>Claude sorar: kendi rakamların, metinlerin, planın… Verirsen onlar yerleşir, vermezsen örnek içerikle gelir. Claude içerik uydurmaz. Yörüngede kendi videolarının klasörünü verirsin.</p>
+    <div class="grid">
+      <div class="fx"><b>/grafik</b><span>Arkana 7 cam widget</span></div>
+      <div class="fx"><b>/liste</b><span>Konuştukça işaretlenen liste</span></div>
+      <div class="fx"><b>/yorunge</b><span>Videoların etrafında döner</span></div>
+      <div class="fx"><b>/bildirim</b><span>Mesajlar ekrana düşer</span></div>
+      <div class="fx"><b>/spot</b><span>Işıklar kararır, neon yazı</span></div>
+      <div class="fx"><b>/bolunmus</b><span>Üstte grafik, altta sen</span></div>
+      <div class="fx"><b>/konum</b><span>Harita, pin, yol tarifi</span></div>
+      <div class="fx"><b>/takvim</b><span>Haftalık plan düşer</span></div>
+    </div>
+  </div></div>
+</div>
+</div>
+<div class="foot"><span>Ücretsiz · MIT lisansı · github.com/mustafasalcom/efekt</span><span><b>mustafasal.com</b> · @mustafasal.co</span></div>
+</body></html>
