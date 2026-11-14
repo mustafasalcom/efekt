@@ -1,0 +1,6 @@
+node_modules/
+engine/public/job/
+engine/out/
+*.mp4
+*.onnx
+.DS_Store

@@ -1,0 +1,14 @@
+{
+  "name": "mustafasalcom",
+  "owner": {
+    "name": "Mustafa Sal",
+    "url": "https://mustafasal.com"
+  },
+  "plugins": [
+    {
+      "name": "efekt",
+      "source": "./",
+      "description": "Kendi videona tek komutla uygulanan özel hazır efekt skilleri."
+    }
+  ]
+}

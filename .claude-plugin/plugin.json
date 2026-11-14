@@ -1,0 +1,20 @@
+{
+  "name": "efekt",
+  "displayName": "Efekt",
+  "version": "1.0.0",
+  "description": "Kendi videona tek komutla uygulanan özel hazır efekt skilleri: grafik, liste, yörünge, bildirim, spot, bölünmüş ekran, konum, takvim.",
+  "author": {
+    "name": "Mustafa Sal",
+    "url": "https://mustafasal.com"
+  },
+  "homepage": "https://github.com/mustafasalcom/efekt",
+  "repository": "https://github.com/mustafasalcom/efekt",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "reels",
+    "remotion",
+    "efekt",
+    "turkce"
+  ]
+}
