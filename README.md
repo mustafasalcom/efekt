@@ -17,6 +17,24 @@ Dikey (9:16) konuşan kafa videonu ver, efektin adını yaz; Claude videonun 5�
 
 ## Kurulum
 
+### En kolayı: linki Claude'a yapıştır
+
+Claude Code'a şunu yaz:
+
+```
+https://github.com/mustafasalcom/efekt kur
+```
+
+Claude repoyu indirir, skill'leri yerleştirir ve motoru kurar (paket kurulumu ve indirme için senden onay ister). Bitince yeni bir oturum aç; komutlar kısa olur: `/grafik`, `/liste`, `/yorunge`, `/bildirim`, `/spot`, `/bolunmus`, `/konum`, `/takvim`.
+
+> **Claude için kurulum talimatı** (kullanıcı bu repoyu kurmanı istediğinde):
+> 1. Kullanıcıya ne yapacağını tek cümleyle söyle ve onay al: repo `~/.efekt/efekt` klasörüne indirilecek, 8 skill `~/.claude/skills` altına yerleşecek, npm paketleri kurulacak, kesim gereken efektler için Python paketleri ve ~224 MB model inecek.
+> 2. Klasör yoksa `git clone https://github.com/mustafasalcom/efekt.git ~/.efekt/efekt`, varsa içinde `git pull`.
+> 3. `node ~/.efekt/efekt/scripts/skill-kur.mjs` çalıştır (kullanıcı kesimli efektleri istemezse `--kesimsiz` ekle). ffmpeg ya da Python eksikse scriptin verdiği kurulum komutunu kullanıcıya ilet.
+> 4. Kullanıcıya yeni bir oturum açmasını ve `/grafik`, `/takvim` gibi komutları kullanmasını söyle.
+
+### Eklenti olarak
+
 Claude Code içinde:
 
 ```
