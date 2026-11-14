@@ -17,7 +17,7 @@ const MODEL_SIZE = 224005088;
 const isWin = process.platform === "win32";
 const skipCut = process.argv.includes("--kesimsiz");
 
-const ok = (cmd, args) => spawnSync(cmd, args, { stdio: "ignore", shell: isWin }).status === 0;
+const ok = (cmd, args) => spawnSync(cmd, args, { stdio: "ignore" }).status === 0;
 const step = (m) => console.log("\n▸ " + m);
 
 step("ffmpeg kontrol ediliyor");
@@ -28,7 +28,7 @@ if (!ok("ffmpeg", ["-version"])) {
 console.log("  tamam");
 
 step("Motor paketleri kuruluyor (ilk seferde birkaç dakika)");
-const npm = spawnSync("npm", ["install", "--no-audit", "--no-fund"], { cwd: ENGINE, stdio: "inherit", shell: isWin });
+const npm = spawnSync(isWin ? "npm.cmd install --no-audit --no-fund" : "npm install --no-audit --no-fund", { cwd: ENGINE, stdio: "inherit", shell: true });
 if (npm.status !== 0) { console.log("  npm install başarısız oldu. Node.js 18+ kurulu mu?"); process.exit(1); }
 
 if (skipCut) { console.log("\nKesim kurulumu atlandı. liste, bildirim, spot, konum, takvim kullanılabilir."); process.exit(0); }
@@ -37,7 +37,7 @@ step("Kesim için Python paketleri (onnxruntime, numpy, pillow)");
 const py = ["python3", "python", "py"].find((c) => ok(c, ["--version"]));
 if (!py) { console.log("  Python bulunamadı (3.9+). Kurulduktan sonra tekrar çalıştırın ya da --kesimsiz kullanın."); process.exit(1); }
 if (!ok(py, ["-c", "import onnxruntime, numpy, PIL"])) {
-  const pip = spawnSync(py, ["-m", "pip", "install", "--user", "onnxruntime", "numpy", "pillow"], { stdio: "inherit", shell: isWin });
+  const pip = spawnSync(py, ["-m", "pip", "install", "--user", "onnxruntime", "numpy", "pillow"], { stdio: "inherit" });
   if (pip.status !== 0) { console.log("  pip kurulumu başarısız oldu."); process.exit(1); }
 }
 console.log("  tamam");

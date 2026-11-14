@@ -1,6 +1,6 @@
 ---
 name: spot
-description: Oda kararır, kişi aydınlık kalır, tepeden ışık huzmesi iner; göğüs hizasında neon kelimeler sırayla yanar. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır.
+description: "Oda kararır, kişi aydınlık kalır, tepeden ışık huzmesi iner; göğüs hizasında neon kelimeler sırayla yanar. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır."
 argument-hint: "[video yolu] [başlangıç saniyesi]"
 allowed-tools: Bash(node ${CLAUDE_PLUGIN_ROOT}/scripts/*) Read Write
 ---

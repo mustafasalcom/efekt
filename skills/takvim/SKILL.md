@@ -1,6 +1,6 @@
 ---
 name: takvim
-description: Siyah cam haftalık takvim; etkinlikler günlere yaylanarak düşer, altın 'şimdi' çizgisi tarar, üstte bildirim iner. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır.
+description: "Siyah cam haftalık takvim; etkinlikler günlere yaylanarak düşer, altın 'şimdi' çizgisi tarar, üstte bildirim iner. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır."
 argument-hint: "[video yolu] [başlangıç saniyesi]"
 allowed-tools: Bash(node ${CLAUDE_PLUGIN_ROOT}/scripts/*) Read Write
 ---

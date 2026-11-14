@@ -1,6 +1,6 @@
 ---
 name: yorunge
-description: Kişinin etrafında 7 cam kart döner: üstte başın arkasından, altta göğsün önünden geçer. Kartlara kişinin kendi videoları/görselleri girer. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır.
+description: "Kişinin etrafında 7 cam kart döner: üstte başın arkasından, altta göğsün önünden geçer. Kartlara kişinin kendi videoları/görselleri girer. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır."
 argument-hint: "[video yolu] [başlangıç saniyesi]"
 allowed-tools: Bash(node ${CLAUDE_PLUGIN_ROOT}/scripts/*) Read Write
 ---

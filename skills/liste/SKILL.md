@@ -1,6 +1,6 @@
 ---
 name: liste
-description: Göğüs hizasında buzlu cam checklist; maddeler konuşurken sırayla tik alır, sıradaki maddede halka döner. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır.
+description: "Göğüs hizasında buzlu cam checklist; maddeler konuşurken sırayla tik alır, sıradaki maddede halka döner. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır."
 argument-hint: "[video yolu] [başlangıç saniyesi]"
 allowed-tools: Bash(node ${CLAUDE_PLUGIN_ROOT}/scripts/*) Read Write
 ---

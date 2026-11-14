@@ -1,6 +1,6 @@
 ---
 name: bolunmus
-description: Üstte siyah-altın editoryal çubuk grafik, altta yuvarlak köşeli video kartı; kişinin başı kartın üstünden grafiğe taşar. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır.
+description: "Üstte siyah-altın editoryal çubuk grafik, altta yuvarlak köşeli video kartı; kişinin başı kartın üstünden grafiğe taşar. Kullanıcının kendi videosuna özel hazır efekt uygular ve yeni bir MP4 çıkarır."
 argument-hint: "[video yolu] [başlangıç saniyesi]"
 allowed-tools: Bash(node ${CLAUDE_PLUGIN_ROOT}/scripts/*) Read Write
 ---
